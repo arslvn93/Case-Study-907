@@ -5,179 +5,136 @@
 // To change text, images, or other content, edit the values in this file.
 // =_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_
 const config = {
-  // -----------------------------------------------------------------------------------------------
-  // GLOBALS
-  // These are values that can be reused throughout the page.
-  // Use the `{{variableName}}` syntax in any string to automatically insert a value from here.
-  // For example, `{{companyName}}` will be replaced with "iStreet Realty Group".
-  // -----------------------------------------------------------------------------------------------
-  globals: {
-    // The main name of the company or brand. Used in the header, footer, and other text.
-    companyName: "iStreet Realty Group",
-
-    // The default text for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonText: "Book A Discovery Call",
-    // The destination URL for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonURL: "https://calendly.com/your-salesgenius-link",
-
-    // The primary theme color for the page (e.g., for tags, links, highlights).
-    // This value is applied to the `--gold` CSS variable.
-    primaryColor: "#e3c379",
-
-    // The accent theme color, typically used for button backgrounds.
-    // This value is applied to the `--accent` CSS variable.
-    accentColor: "#d9c6a2",
-
-    // Facebook Pixel ID for tracking. Leave empty to disable Facebook tracking.
-    facebookPixelId: "1074316633770404",
-
-    // A list of agent objects. This data is used to build the contact cards in the sidebar and footer.
-    // You can add or remove agents from this list.
-    agents: [
+  "globals": {
+    "companyName": "Atlas Group",
+    "mainCTAButtonText": "Book A Discovery Call",
+    "mainCTAButtonURL": "#contact",
+    "primaryColor": "#e3c379",
+    "accentColor": "#d9c6a2",
+    "agents": [
       {
-        // Full name of the agent.
-        name: "Rick Roccasalva",
-        // (Optional) URL for the agent's photo. If omitted, no photo will be shown for this agent.
-        imageSrc: "https://images.unsplash.com/photo-1557862921-37829c790f19?fit=crop&w=100&q=80",
-        // A list of contact methods for the agent.
-        contactDetails: [
-          { type: "email", value: "rick@istreelrealty.ca" },
-          { type: "phone", value: "(416) 616-9369" }
-        ]
-      },
-      {
-        name: "Steven Simonetti",
-        imageSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=100&q=80",
-        contactDetails: [
-          { type: "email", value: "steven@istreelrealty.ca" },
-          { type: "phone", value: "(416) 400-7653" }
+        "name": "Angelo Manousiadis",
+        "imageSrc": "https://app.salesgenius.co/api/user-images/3fe224d7-5dd7-47b2-a8aa-c374fc8ad3a3?v=95febeea35a2b0ff68219e41b8e7a53e78654839528e95b76a9d183949326ab8",
+        "contactDetails": [
+          {
+            "type": "email",
+            "value": "angelo@atlasgrouprealty.ca"
+          },
+          {
+            "type": "phone",
+            "value": "778-232-3623"
+          }
         ]
       }
     ]
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // HEADER
-  // Content for the main header section at the top of the page.
-  // -----------------------------------------------------------------------------------------------
-  header: {
-    // A small tag or label that appears above the main title.
-    tag: "CASE STUDY",
-    // The main headline (H1) of the page.
-    title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-    // The subheadline below the main title. Can include HTML tags like <strong> or <a>.
-    subheadline: "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now Generating Top-Dollar Rent in a Tight Market"
+  "header": {
+    "tag": "CASE STUDY",
+    "title": "How We Helped Downsizing Professionals Sell Their $1.7M Luxury Condo in Just 4 Days—83% Faster Than Market Average—When Most Luxury Listings Sat Idle",
+    "subheadline": "Sold at Full Ask in a Slow Market Through Strategic Pricing and Documentary-Style Storytelling That Attracted Only Serious, Pre-Qualified Buyers"
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // MAIN BOX
-  // This object contains the content for the two-column layout below the header,
-  // which includes the main summary and the sidebar.
-  // -----------------------------------------------------------------------------------------------
-  mainBox: {
-    // Content for the left column (the main summary).
-    summary: {
-      title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-      heroImage: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" },
-      subTitle: "Summary",
-      // An array of paragraph strings. Each string is a new paragraph. Can include HTML.
-      paragraphs: [
-        "In one of Vaughan’s most competitive pockets, a <strong>savvy investor client was looking for a cash-flowing, turn-key property to build long-term generational wealth</strong>. The challenge: high demand, limited inventory, and bidding wars on nearly every listing worth seeing.",
-        "After viewing 8 homes, we found a <strong>rare 2-unit property in Woodbridge</strong> underlisted at $999k to spark competition. The listing drew 10 offers—but through strategic negotiation, a larger deposit, firm terms, and a quick close... we won the deal at $1.26M without needing to be the highest bid. The property has since been <strong>rented at top market value</strong>, exceeding the client’s expectations and <strong>setting the foundation for strong equity gains</strong> in the years to come."
+  "mainBox": {
+    "summary": {
+      "title": "How We Helped Downsizing Professionals Sell Their $1.7M Luxury Condo in Just 4 Days—83% Faster Than Market Average—When Most Luxury Listings Sat Idle",
+      "heroImage": {
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1776106955707-3-web-or-mls-Photo-3.jpg"
+      },
+      "subTitle": "Summary",
+      "paragraphs": [
+        "Meet a professional couple approaching retirement who faced a beautiful dilemma: they had a new granddaughter and wanted to be close enough to watch her grow up and help care for her. Their luxury two-bedroom condo in Port Moody had served them perfectly—close to gyms, groceries, nature, and nightlife, yet elevated and peaceful—but it was time to move closer to family.",
+        "Through professional service and market expertise, we delivered exceptional results for our client. <strong>SOLD FOR FULL ASKING PRICE: $1,699,000</strong> <strong>SOLD IN 4 DAYS vs. 23-day market average—83% FASTER</strong> <strong>5 SHOWINGS IN 3 DAYS—100% PRE-QUALIFIED SERIOUS BUYERS</strong> Generated a signed offer within 72 hours with backup buyers waiting in line if the first deal fell through Successfully navigated inspection issues without costing the sellers a single dollar or losing the buyer Negotiated clean offer terms with fewer conditions and closing dates perfectly aligned to the sellers' relocation timeline"
       ]
     },
-    // Content for the right column (the sidebar).
-    sidebar: {
-      title: "About {{companyName}}",
-      image: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-      // An array of paragraph strings for the sidebar. Can include HTML like <br> for line breaks.
-      paragraphs: [
-        "At {{companyName}} we are built on integrity, insight, and innovation.",
-        "We combine decades of real estate expertise with cutting-edge technology to deliver unmatched support, transparency, and results for our clients.",
-        "With over 40 years of hands-on real estate experience and extensive corporate backgrounds, our managing partners provide a balanced and strategic approach to Residential, Commercial, and Investment properties.",
-        "We prioritize clear communication and use the latest market insights to guide every client toward success—whether buying, selling, or investing.",
-        "<strong>At iStreet Realty Inc., we're more than real estate experts—we're your trusted partner in building your future.</strong>"
+    "sidebar": {
+      "title": "About {{companyName}}",
+      "image": {
+        "src": "https://app.salesgenius.co/api/user-images/3fe224d7-5dd7-47b2-a8aa-c374fc8ad3a3?v=95febeea35a2b0ff68219e41b8e7a53e78654839528e95b76a9d183949326ab8"
+      },
+      "paragraphs": [
+        "At {{companyName}} we provide professional real estate services with integrity, expertise, and dedication to our clients' success. Our experienced team combines market knowledge with personalized service to help you achieve your real estate goals. Whether you're buying, selling, or investing, we're here to guide you through every step of the process with transparency and results-driven strategies."
       ]
     }
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // SECTIONS
-  // An array of content sections that appear in order below the main box.
-  // You can add, remove, or reorder these section objects.
-  // -----------------------------------------------------------------------------------------------
-  sections: [
-    // `type: "standard"`: A flexible section that can contain a title, paragraphs, a list,
-    // a testimonial, and an image. All properties are optional.
-    // If an `image` is included, the section will render as two columns (text and image).
-    // If no `image` is included, it will be a single, full-width column.
+  "sections": [
     {
-      type: "standard",
-      title: "The Challenge",
-      paragraphs: [
-        "This investor client had a clear goal: <strong>find a cash-flowing, turn-key duplex in one of Vaughan’s most desirable neighborhoods—Woodbridge.</strong> Out in a market filled with bidding wars and underlisted homes designed to spark competition, finding the right property and <strong>winning it without overpaying was no small feat.</strong>",
-        "The biggest challenge? <strong>Every worthwhile home had multiple offers</strong>, and this buyer was competing with aggressive bids from both investors and end-users. There was also <strong>lingering uncertainty around whether a property like this could attract renters at top value</strong>, which could make or break the deal financially."
+      "type": "standard",
+      "title": "The Challenge",
+      "paragraphs": [
+        "Selling a $1.7M luxury property in a market with very few qualified buyers while other high-end listings languished with no offers",
+        "The paralyzing fear of receiving lowball offers that would make their dream move financially impossible",
+        "Needing to sell within 3-6 months to coordinate their relocation, but watching the market slow to a crawl around them",
+        "Previous negative experiences with agents who overpromised and underdelivered left them skeptical and uncertain who to trust"
       ]
     },
     {
-      type: "standard",
-      title: "The Strategy",
-      paragraphs: [
-        "With 8 properties viewed and a clear sense of what would work, the client was ready to move fast. <strong>When 95 Mondavi Rd hit the market—underlisted at $999,000 to fuel a bidding war—we saw an opportunity.</strong>",
-        "Rick’s negotiation strategy focused on strong offer terms, not just price. By removing financing conditions, offering a larger deposit, and proposing a quicker close, he positioned the client as a serious, low-risk buyer. Rick also maintained clear and professional communication with the listing agent throughout, building trust and credibility."
+      "type": "standard",
+      "title": "The Strategy",
+      "paragraphs": [
+        "Conducted a precision market analysis using comparable sales data, then applied our experience to determine the exact perceived value range for this unique property—pricing it strategically to create immediate momentum",
+        "Created a documentary-style video that told the story of the home itself, highlighting what made it truly one-of-a-kind rather than making it about us as agents",
+        "Launched targeted advertising and social media campaigns designed specifically to reach qualified luxury buyers actively searching in this building",
+        "Positioned the property's rarity as a key advantage, emphasizing that homes like this rarely come to market—creating genuine urgency without gimmicks",
+        "Pre-negotiated offer terms with the buyer's agent before the offer was written, streamlining conditions and aligning dates with our sellers' needs to avoid unnecessary friction"
       ],
-      // An optional testimonial object. Renders as a styled blockquote.
-      testimonial: { quote: "“I had an amazing experience working with Rick & Steven at iStreet Realty Group. Communication and follow-through were prompt every step. Negotiating the winning offer was about strategy, not just price!”<br><span>— Vaughan Investor</span>" }
+      "testimonial": {
+        "quote": "\"We were ecstatic that we received such a great offer so quickly, and were truly impressed with how the Atlas Group was able to bring it all together. After issues with other agents in the past, seeing how smoothly this sale went was incredible. They told us the truth from day one and backed it up with a real plan—not empty promises.\"<br><span>— Satisfied Client</span>"
+      }
     },
     {
-      type: "standard",
-      title: "The Solution",
-      paragraphs: [
-        "<strong>The winning offer came in at $1,260,000</strong>—not the highest bid on the table, but the most attractive in terms of certainty, speed, and simplicity. The absence of conditions and the strength of the deposit made the difference, and the seller accepted.",
-        "<strong>After closing, the client successfully rented out both units</strong> of the property at top market value—proving the property’s income potential. The fast, clean closing allowed the client to move quickly and capitalize on a prime investment opportunity."
+      "type": "standard",
+      "title": "The Solution",
+      "paragraphs": [
+        "They chose to work with us because we refused to play the game other agents were playing. Instead of inflating the price to win their listing, we showed them the truth backed by hard market data—and then presented a complete battle plan to attract serious buyers through documentary-style video and targeted advertising that would tell their home's unique story, not ours."
       ],
-      // An optional image object. If present, creates a two-column layout for this section.
-      image: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" }
+      "image": {
+        "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1776107078771-57-web-or-mls-Additional Photo-6.jpg"
+      }
     },
     {
-      type: "standard",
-      title: "The Results",
-      // An optional array of strings for a bulleted list.
-      listItems: [
-        "The client won a competitive 10-offer bidding war and secured a turn-key duplex in Woodbridge that now generates strong rental income.",
-        "Both units were rented out at top market value shortly after closing, confirming the investment’s potential.",
-        "<strong>By acting quickly and strategically, the client not only acquired a high-performing property in a competitive market, but also set themselves up for significant equity growth over the next 3–5 years.</strong>"
+      "type": "standard",
+      "title": "The Results",
+      "paragraphs": [
+        "<strong>SOLD FOR FULL ASKING PRICE: $1,699,000</strong>",
+        "<strong>SOLD IN 4 DAYS vs. 23-day market average—83% FASTER</strong>",
+        "<strong>5 SHOWINGS IN 3 DAYS—100% PRE-QUALIFIED SERIOUS BUYERS</strong>",
+        "Generated a signed offer within 72 hours with backup buyers waiting in line if the first deal fell through",
+        "Successfully navigated inspection issues without costing the sellers a single dollar or losing the buyer",
+        "Negotiated clean offer terms with fewer conditions and closing dates perfectly aligned to the sellers' relocation timeline"
       ]
     },
     {
-      type: "standard",
-      title: "Conclusion",
-      paragraphs: [ "<strong>In a competitive market, success doesn’t always come down to price.</strong> With the right agent, strategy, and negotiation, even a 10-offer bidding war can be an opportunity—not a roadblock." ]
+      "type": "standard",
+      "title": "Conclusion",
+      "paragraphs": [
+        "<strong>Honesty beats hype every time:</strong> Agents who inflate your price to win your listing will cost you weeks or months on the market. Data-driven pricing creates momentum that attracts serious buyers immediately.",
+        "<strong>Presentation is your competitive advantage:</strong> In a slow market, buyers skip anything that feels overpriced or generic. Investing in storytelling that highlights what makes your home unique—like documentary-style video—separates you from listings that just sit idle.",
+        "<strong>Pre-negotiation eliminates deal-killing friction:</strong> Working ahead with buyer's agents to align on terms and dates before the offer is written keeps transactions clean, fast, and stress-free—protecting both your timeline and your sale price."
+      ]
     },
-    // `type: "ctaBanner"`: Renders a distinct, full-width Call-to-Action banner with a dark background.
     {
-      type: "ctaBanner",
-      ctaBannerContent: {
-        subhead: "Trusted By Hundreds Of Home Buyers & Sellers",
-        headline: "Find Out More About Working With<br>Rick Roccasalva and Steven<br>Simonetti at {{companyName}}",
-        smallText: "Book A Discovery Call Now ➡️"
+      "type": "ctaBanner",
+      "ctaBannerContent": {
+        "subhead": "Trusted By Hundreds Of Home Buyers & Sellers",
+        "headline": "Book Your Free Luxury Property Strategy Session—Get Your Custom Market Analysis and Documentary-Style Marketing Plan in 48 Hours",
+        "smallText": "Book A Discovery Call Now ➡️"
       }
     }
   ],
-
-  // -----------------------------------------------------------------------------------------------
-  // FOOTER
-  // Content for the footer at the bottom of the page.
-  // -----------------------------------------------------------------------------------------------
-  footer: {
-    logo: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-    brokerageLabel: "Brokerage:",
-    brokerageName: "Homelife Partners Realty Corp.",
-    brokerageAddress: "123 Main Street, Suite 456, Toronto, ON M1M 1M1",
-    // A secondary logo, often for the brokerage. Optional.
-    secondaryLogo: { src: "https://i.imgur.com/9GIzqTo.png" },
-    disclaimerText: "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
-    privacyPolicy: { text: "Privacy Policy", href: "#" }
+  "footer": {
+    "logo": {
+      "src": "https://app.salesgenius.co/api/user-images/3fe224d7-5dd7-47b2-a8aa-c374fc8ad3a3?v=95febeea35a2b0ff68219e41b8e7a53e78654839528e95b76a9d183949326ab8"
+    },
+    "brokerageLabel": "Brokerage:",
+    "brokerageName": "Stonehaus Realty Corp",
+    "brokerageAddress": "A-1126 Austin Ave, Coquitlam, BC, V3K 3P5, Canada",
+    "secondaryLogo": {
+      "src": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1771907087894-Atlas Group-01.jpg"
+    },
+    "disclaimerText": "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
+    "privacyPolicy": {
+      "text": "Privacy Policy",
+      "href": "https://atlasgrouprealty.ca/site/privacy-terms"
+    }
   }
 };
 
